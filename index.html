@@ -1,0 +1,64 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+  <title>Formulario 2</title>
+</head>
+<body>
+  <main>
+    <div id="banner_content">
+      <img src="./assets/banner.jpg" alt="banner da pagina de cadastro">
+    </div>
+    <div id="form_content">
+      <div id="titles">
+        <h1>Crie sua conta grátis</h1>
+        <p>Sem taxas na criação da conta.</p>
+      </div>
+      <form>
+        <div class="group">
+          <label for="email">Seu email<span>*</span></label>
+          <input type="email" name="email" id="email" placeholder="seuemail@email.com" autofocus>
+        </div>
+        <div class="group">
+          <label for="username">Nome de usuário<span>*</span></label>
+          <input type="text" name="username" id="username" placeholder="Nome de usuário">
+        </div>
+        <div class="group">
+          <label>Senha<span>*</span></label>
+          <input type="password" name="password" id="password" placeholder="********">
+        </div>
+        <h2>Outras maneiras</h2>
+        <div class="other_ways">
+          <a href="#">
+            <label> 
+              <img src="./assets/google-icon.svg" alt="icone do google">
+              <p>Google</p>
+            </label>
+          </a>
+          <a href="#">
+            <label>
+              <img src="./assets/facebook-icon.svg" alt="Facebook icone">
+              <p>Facebook</p>
+            </label>
+          </a>
+          <a href="#">
+            <label>
+              <img src="./assets/linkedin-icon.svg" alt="LinkedIn icone">
+              <p>LinkedIn</p>
+            </label>
+          </a>
+        </div>
+        <div id="privacy_policy">
+          <input type="checkbox" name="agreement" id="agreement">
+          <label for="agreement">Criando uma conta você esta de acordo com os Termos e Condições e Política de Privacidade</label>
+        </div>
+        <button id="submit_button" type="button" disabled>Criar</button>
+      </form>            
+    </div>
+  </main>
+</body>
+</html>
