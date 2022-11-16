@@ -124,7 +124,7 @@ h2 {
    font-size: .7em;
 }
 
-#form_content form #submit_button {
+#form_content form #create_button {
    height: 30px;
    width: 150px;
    margin-top: 10px;
@@ -133,8 +133,13 @@ h2 {
    background-color: rgb(47, 44, 178);
 }
 
-#form_content form #submit_button:hover {
-   background-color: rgba(47, 44, 178, 0.8);
+#form_content form .active:hover {
+   cursor: pointer;
+}
+
+#form_content form #create_button:disabled {
+   opacity: 0.4;
+   
 }
 
 
@@ -144,7 +149,7 @@ h2 {
 
 @media (max-width: 712px) {
    #form_content #titles h1 {
-      font-size: 20px;
+      font-size: 25px;
    }
 
    #form_content form .group input {
