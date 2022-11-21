@@ -21,15 +21,15 @@
       <form>
         <div class="group">
           <label for="email">Seu email<span>*</span></label>
-          <input type="email" name="email" id="email" placeholder="seuemail@email.com" autofocus>
+          <input type="email" name="email" id="email" placeholder="seuemail@email.com" autofocus required>
         </div>
         <div class="group">
           <label for="username">Nome de usuário<span>*</span></label>
-          <input type="text" name="username" id="username" placeholder="Nome de usuário">
+          <input type="text" name="username" id="username" placeholder="Nome de usuário"required>
         </div>
         <div class="group">
           <label>Senha<span>*</span></label>
-          <input type="password" name="password" id="password" placeholder="********">
+          <input type="password" name="password" id="password" placeholder="********" required>
         </div>
         <h2>Outras maneiras</h2>
         <div class="other_ways">
@@ -54,9 +54,9 @@
         </div>
         <div id="privacy_policy">
           <input type="checkbox" name="agreement" id="agreement">
-          <label for="agreement">Criando uma conta você esta de acordo com os Termos e Condições e Política de Privacidade</label>
+          <label for="agreement">Criando uma conta você esta de acordo com os <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a></label>
         </div>
-        <button id="create_button" type="button" disabled>Criar</button>
+        <button id="create_button" type="submit" disabled>Criar</button>
       </form>            
     </div>
   </main>

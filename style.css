@@ -10,6 +10,7 @@ body {
 
 main {
    display: flex;
+   
 }
 
 #banner_content {
@@ -18,8 +19,8 @@ main {
 }  
 
 #banner_content img {
-   height: 100%;
-   background-size: cover;
+   height: 100vh;
+   background-size: contain;
    background-position: center;
 }
 
@@ -29,6 +30,7 @@ main {
    max-width: 400px;
    min-width: 320px;
    padding: 10px 40px;
+   overflow: hidden;
    /* background-color: #4a4a4a; */
    /* color: #fff; */
 }
@@ -119,7 +121,6 @@ h2 {
    width: 20px;
 }
 
-
 #form_content form #privacy_policy label {
    font-size: .7em;
 }
@@ -142,6 +143,9 @@ h2 {
    
 }
 
+.success {
+   border: 1px solid green;
+}
 
 .error {
    border: 1px solid red;
@@ -174,8 +178,15 @@ h2 {
       width: 150px;
    }
 
-   #form_content form .other_ways a label{
-      display: flex;
-      justify-content: space-evenly;
+   #form_content form .other_ways a {
+      display: flex; 
+      justify-content: space-evenly; 
+   }
+}
+
+@media screen and (max-height: 582px) {
+   #form_content {
+      overflow-y: scroll;
+      max-height: 100vh;
    }
 }
