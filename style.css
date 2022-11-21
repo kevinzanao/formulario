@@ -26,6 +26,7 @@ main {
 
 #form_content {
    display: flex;
+   justify-content: center;
    flex-direction: column;
    max-width: 400px;
    min-width: 320px;
@@ -162,6 +163,14 @@ h2 {
 
    #form_content form .other_ways a {
       height: 25px;
+   }
+
+   .success {
+      border: 2px solid green;
+   }
+
+   .error {
+      border: 2px solid red;
    }
 }
 
